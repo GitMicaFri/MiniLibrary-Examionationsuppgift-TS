@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 14rem;
+    background-image: url(./assets/colorful-book-shelf-resize.jpg);
+    
+    margin-top: 3rem;
+}
+
+h1 {
+font-size: 2.5rem;
+font-family:cursive;
+color: rgb(245, 245, 10);
+letter-spacing: 0.3ch;
+text-shadow: 1px 1px 2px rgb(233, 175, 175), 0 0 1em rgb(166, 166, 236), 0 0 0.2em blue;
+margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1rem
+}
+
+h3 {
+    font-size: 0.7rem;;
+}
+
+h1, h2, h3, h4,  p, button {
+    font-family: cursive;
+    font-weight:100;
+    color: rgb(244, 244, 16);
+    text-shadow: 1px 1px 1px rgb(115, 31, 31), 0 0 1em blue, 0 0 0.2em blue;
+}
+
+
+p {
+    font-size: 0.9rem;
+}
+
+h4 {
+    font-size: 0.7rem;
+}
+
+#page1 {
+    background-color: antiquewhite;
+
+}
+#book-shelf {
+    display: grid;
+    grid-template-areas:
+    'book-cover book-cover book-cover book-cover'
+    'book-cover book-cover book-cover book-cover';
+    row-gap: 2rem;
+    margin-left: 1.5rem;
+    margin-top: 4rem;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    height: 15rem;
+    width: 11rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#goodnight-moon {
+    /*background-color: #2F80ED;*/
+    background-image: url(./assets/goodnight-moon-resize.jpg)
+}
+
+#the-very-hungry-caterpillar {
+    /*background-color: #27AE60;*/
+    background-image: url(./assets/hungry-caterpillar-resize.jpg);
+}
+
+#a-wrinkle-in-time {
+    /*background-color: #6FCF97;*/
+    background-image: url(./assets/wrinkle-in-time-resize.jpg);
+}
+
+#harold-and-the-purple-crayon {
+    /*background-color: #9B51E0;*/
+    background-image: url(./assets/Harold-resize.jpg)
+}
+
+#where-the-wild-things-are {
+    /*background-color:#56CCF2;*/
+    background-image: url(./assets/Wild-things-resize.jpg)
+    
+}
+
+#madeline {
+    /*background-color: #F2C94C;*/
+    background-image: url(./assets/madeline-resized.jpg);
+}
+
+#the-tale-of-peter-rabbit {
+    /*background-color: #F2994A;*/
+    background-image: url(./assets/peter-rabbit-resized.jpg)
+}
+
+#charlottes-web {
+    /*background-color: #EB5757;*/
+    background-image: url(./assets/Charlottes-web-resized.jpg)
+}
+
+
+
+
+
+
+
+/*************** Page 2 ********************/
+#page2-container {
+    margin: 4rem;
+}
+
+#page2 {
+    background-color: #000000ca;
+}
+
+#back-btn {
+    display: block;
+    background-color: grey;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%
+}
+
+.book-overview {
+    display: flex;
+    justify-content:space-around
+}
+
+.book-cover {
+    background-color: white;
+    justify-content: flex-end;
+    text-align: center;
+
+}
+
+.book-description {
+    align-content: space-around;
+
+}
+
+.book-cover, .book-description {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 25rem;
+    border: 1px solid white;
+    padding: 2rem;
+}
+
+#page2-1-title, #page2-1-author {
+    color: black;
+}
+
+#page2-2-title, #page2-2-author, 
+.description, .facts {
+    color: white;
+}
+
+#description {
+    text-align: center;
+    text-wrap: wrap;
+}
+
+
+.facts {
+    display: grid;
+    grid-template-areas:
+    'fact fact'
+    'fact fact ';
+    row-gap: 2rem;
+    background-color: rgb(95, 93, 93);
+    padding: 1rem;
+}
+
+
+#read-btn {
+    background-color: white;
+    color: black;
+    height: 3rem; 
+    width: 11rem;
+    border-radius: 4px;
+    border: none;
+    font-weight:bold;
+    margin-top: 1rem;
+}
