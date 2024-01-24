@@ -31,15 +31,44 @@ function updatePage1(bookList){ // uppdate title author 1st page
     });
 }
 
-function updatePage2(bookList){ // uppdate title author 2nd page
-    const selectedBookData = JSON.parse(localStorage.getItem('selectedBook'));
-    
-    const bookElement = document.querySelector('.book-cover');
-    if (bookElement) {
-        updateBookElement(selectedBookData, bookElement);
+
+function updatePage2(bookList){ // uppdate title author 2nd page. funktionen förväntar sig att få en lista av böcker som input
+    const selectedBookData = JSON.parse(localStorage.getItem('selectedBook')); // Hämta och parsa vald boks data från local storage, och lagra den i selectedBook
+if (selectedBookData){
+    const bookCoverElement = document.querySelector('.book-cover');
+    const bookDescriptionElement = document.querySelector('.book-description');
+    if (bookCoverElement && bookDescriptionElement ) {// kontroll för att säkerställa att både bokomslaget och bokbeskrivningen hittades. Om båda elementen finns, går vi in i koden inuti detta villkor.
+
+        // uppdatera bokomslaget
+        const titleCoverElement = bookCoverElement.querySelector('.title');
+        const authorCoverElement = bookCoverElement.querySelector('.author')
+        if (titleCoverElement && authorCoverElement) {
+            titleCoverElement.textContent = selectedBookData.title;
+            authorCoverElement.textContent = selectedBookData.author;
+        }
+
+        // uppdatera bokbeskrivningen
+        const titleDescElement = bookDescriptionElement.querySelector('.title');
+        const authorDescElement = bookDescriptionElement.querySelector('.author');
+        const descriptionElement = bookDescriptionElement.querySelector('.description')
+        const factsElement = bookDescriptionElement.querySelector('.facts')
+
+        if (titleDescElement && authorDescElement && descriptionElement && factsElement) {
+            titleDescElement.textContent = selectedBookData.title;
+            authorDescElement.textContent = selectedBookData.author;
+            descriptionElement.textContent = selectedBookData.description;
+            factsElement.querySelector('h4:nth-child(1)').textContent = `Audience: ${selectedBookData.audience}`;
+            factsElement.querySelector('h4:nth-child(2)').textContent = `First published: ${selectedBookData.firstPublished}`;
+            factsElement.querySelector('h4:nth-child(3)').textContent = `Pages: ${selectedBookData.pages}`;
+            factsElement.querySelector('h4:nth-child(4)').textContent = `Publisher: ${selectedBookData.publisher}`;
+        }
+
+       
     }
+    } 
 }
  
+
 function setUpBackButton(){ // event listener for back button
     //back-button
     const backButton =document.querySelector("#back-btn")
