@@ -83,7 +83,7 @@ h4 {
   height: 17rem;
   width: 13rem;
   padding: 1rem;
-  border: 1px solid black;
+  border: 2px solid rgb(232, 239, 17);
   border-radius: 4px;
 }
 
@@ -149,7 +149,9 @@ h4 {
 
 #back-btn {
   display: block;
-  background-color: grey;
+  font-size: 2rem;
+  font-weight:bolder;
+  background-color: rgb(128, 128, 128);
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
@@ -177,7 +179,7 @@ h4 {
   flex-direction: column;
   height: 38rem;
   width: 30rem;
-  border: 1px solid white;
+  border: 2px solid rgb(242, 250, 11);
   padding: 2rem;
 }
 
@@ -204,7 +206,7 @@ h4 {
     'fact fact'
     'fact fact ';
   row-gap: 2rem;
-  background-color: rgb(95, 93, 93);
+  background-color: rgba(95, 93, 93, 0.476);
   padding: 1rem;
   margin-top: 2rem;
 }
@@ -217,6 +219,6 @@ h4 {
   width: 12rem;
   border-radius: 4px;
   border: none;
-  font-weight: bold;
+  font-weight: light;
   margin-top: 2rem;
 }
