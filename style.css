@@ -15,7 +15,6 @@ header {
   text-align: center;
   height: 14rem;
   background-image: url(./assets/colorful-book-shelf-resize.jpg);
-
   margin-top: 3rem;
 }
 
@@ -34,7 +33,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 h4 {
@@ -58,7 +57,7 @@ p {
 }
 
 h4 {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 #page1 {
@@ -142,7 +141,7 @@ h4 {
 }
 
 #page2 {
-  background-color: #000000ca;
+  background-color: rgb(84, 53, 10);
   width: 100vw;
   height: 100vh;
   display: none;
@@ -151,14 +150,15 @@ h4 {
 #back-btn {
   display: block;
   background-color: grey;
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
 }
 
 .book-overview {
   display: flex;
   justify-content: space-around;
+  margin-top: 10rem;
 }
 
 .book-cover {
@@ -175,8 +175,8 @@ h4 {
 .book-description {
   display: flex;
   flex-direction: column;
-  height: 30rem;
-  width: 25rem;
+  height: 38rem;
+  width: 30rem;
   border: 1px solid white;
   padding: 2rem;
 }
@@ -206,15 +206,17 @@ h4 {
   row-gap: 2rem;
   background-color: rgb(95, 93, 93);
   padding: 1rem;
+  margin-top: 2rem;
 }
 
 #read-btn {
-  background-color: white;
+  background-color: rgb(236, 250, 83);
   color: black;
+  font-size: 1rem;
   height: 3rem;
-  width: 11rem;
+  width: 12rem;
   border-radius: 4px;
   border: none;
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
